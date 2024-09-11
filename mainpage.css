@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 150px;
+    display: flex;
+}
+#inbox1,#inbox2{
+    border: solid 1px;
+    height: 150px;
+}
+#inbox1{
+    width: 150px;
+}
+#inbox2{
+    width: 1800px;
+    text-align: center;
+}
+#clgname{
+    font-size: 65px;
+    color: red;
+}
+#scrollclg{
+    font-size: 25px;
+    font-weight: bold;
+    color: blueviolet;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 205px;
+    float: left;
+    text-align: center;
+    line-height: 48px;
+    background-color: #7196c7;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    border-radius: 20px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: #0f0505;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: #b41320;
+}
+.outerbox{
+    border: solid 1px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 350px;
+}
+#in1{
+    width: 700px;
+    background-image: url(bgi2.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px,350px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(bgi1.jpg);
+    }
+    20%{
+        background-image: url(bgi3.jpg);
+    }
+    30%{
+        background-image: url(bgi4.jpg);
+    }
+    40%{
+        background-image: url(bgi5.jpg);
+    }
+    50%{
+        background-image: url(bgi6.jpg);
+    }
+    60%{
+        background-image: url(bgi7.jpg);   
+    }
+}
+#in2,#in3{
+    width: 700px;
+}
